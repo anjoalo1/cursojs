@@ -104,3 +104,38 @@ ol>li{
     border: 1px solid rgb(165, 97, 13);
     margin: 10px 0;
 }
+
+img{
+    border: 1px solid magenta;
+}
+
+
+.image-initial{
+    margin-top: 20px;
+    min-width: 270px;
+    max-width: 700px; 
+    overflow-x: auto; 
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 15px 15px 20px rgb(0, 0, 0, 0.5);
+  }
+
+
+
+  .border{
+    border: 1px solid white;
+    padding: 10px;
+  }
+
+  .fondo{
+    background-color: rgb(9, 2, 36);
+  }
+
+  th, td {
+    border: 1px solid white;
+    padding: 8px;
+  }
