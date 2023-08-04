@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455.06 250.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: SourceSansPro-Bold, 'Source Sans Pro';
+        font-size: 200px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #f8e928;
+      }
+
+      .cls-2 {
+        fill: #f39200;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="455.06" height="250.13"/>
+  <text class="cls-1" transform="translate(16.23 184.79)"><tspan x="0" y="0">&lt;JS&gt;</tspan></text>
+  <text class="cls-2" transform="translate(7.76 184.79)"><tspan x="0" y="0">&lt;</tspan></text>
+  <text class="cls-2" transform="translate(343.29 184.79)"><tspan x="0" y="0">&gt;</tspan></text>
+  <text/>
+</svg>
