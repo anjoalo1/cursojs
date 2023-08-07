@@ -15,36 +15,49 @@
 </head>
 <body>
 
-    <div class="container-main">
-
-        <header class="header">
-            
-                <a  href="../index.html">Home</a>
-                <div class="image-header">
-                    <img src="./public/svg_js.svg" alt="" height="300px"> 
+    <header>
+        
+        <div>
+            <nav>
+                <div class="header-links">
+                    <a  href="../index.html">Home</a>
                 </div>
+                <div class="header-links">
+                    <a  href="../index.html">Ejemplos</a>
+                </div>
+                <div class="header-links">
+                    <a  href="../index.html">About</a>
+                </div>
+            </nav>
+        </div>
+        
+        
+        
+        <div class="container-image-header">
+  
+        </div>
 
-               
-            
-        </header>
+      
+    
+          
+    </header>
 
+    
+    
+    
+    <div class="container-main">
         <main class="main">
 
-         
 
-                
-                
-                
-                    
                         <details>
                             <summary class="summary-left">
                                 <a>Contenido Del Curso</a>
                             </summary>
-                            <ul>
-                                <li>¿Qué es javascript?</li>
-                                <li>Uso De Visual Studio Code</li>
-                                <li>Variables y Tipos de Operadores</li>
-                                <li>Estructuras de control</li>
+                            <ul class="ul-summary">
+                                <li><a href="./index.html">¿Qué es javascript?</a></li>
+                                <li><a href="./pages/visual.html">Uso De Visual Studio Code</a></li>
+                                <li><a href="./pages/varoper.html">Variables y Tipos de Operadores</a></li>
+                                <li><a href="#">Estructuras de control</a></li>
                                 <li>Funciones</li>
                                 <li>Eventos</li>
                                 <li>Clases y objetos</li>
@@ -53,23 +66,9 @@
                                 <li>APIs y JSON</li>
                             </ul>
                         </details>
-                    
 
-                    
-                 
-                    
-               
-           
                 
                 <h1 class="title-h1">Curso Javascript</h1>
-
-
-            
-
-              
-
-
-
 
 
             <section class="section-js">
@@ -190,20 +189,47 @@
             </section>
         </main>
 
+
+    </div>
+
         <div class="navigation">
-            <a href="../pages/visual.html">
-                <p>
-                    Uso de Visual Studio Code
-                </p>
-            </a>
+
+            <div class="container-next">
+                <a href="/index.html">
+                    <div>
+                        <img src="./public/flecha_left.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+
+                        <p>
+                            Home
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="container-next">
+                <a href="./pages/visual.html">
+                    <div>
+                        <img src="./public/flecha_svg.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+
+                        <p>
+                            Ir uso de visual studio code
+                        </p>
+                    </div>
+                </a>
+            </div>
 
         </div>
 
+    
 
         <footer>
-           
+            <p>Creado por Solu-Informática</p>
         </footer>
-    </div>
     <script src="./scripts/prism_js/prism.js"></script>
 </body>
 </html>

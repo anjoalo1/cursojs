@@ -13,18 +13,37 @@
 </head>
 <body>
 
-    <div class="container-main">
-
-        <header class="header">
-            
-            <a  href="../index.html">Home</a>
-            <div class="image-header">
-                <img src="../public/svg_js.svg" alt="" height="300px"> 
-            </div>
-
-           
+    
+    <header>
         
+        <div>
+            <nav>
+                <div class="header-links">
+                    <a  href="../index.html">Home</a>
+                </div>
+
+                <div class="header-links">
+                    <a  href="../index.html">Ejemplos</a>
+                </div>
+                <div class="header-links">
+                    <a  href="../index.html">About</a>
+                </div>
+            </nav>
+        </div>
+        
+        
+        
+        <div class="container-image-header">
+
+            
+        </div>
+
+      
+    
+          
     </header>
+
+    <div class="container-main">
 
         <main class="main">
             <h1 class="title-h1">Variables y Tipos de Operadores</h1>
@@ -32,7 +51,62 @@
             <section class="section-js">
                 <article>
 
-                    <h2 class="title-h2">¿Qué es una Variable?</h2>
+                    
+
+                  <p class="parrafo">
+                    Antes de continuar, es aconsejable usar una funcion de javascript para ver los resultados, con esto nos referimos a <span class="resaltado">conlsole.log()</span>
+                  </p>
+
+                  <p class="parrafo">
+                    La función <span class="resaltado">
+                        console.log()
+                    </span> en JavaScript se utiliza para imprimir mensajes o valores en la consola del navegador o en la terminal (si estás ejecutando código en Node.js). Es una herramienta de depuración fundamental que permite a los desarrolladores mostrar información mientras están construyendo, probando y depurando sus aplicaciones.
+                  </p>
+
+                  <p class="parrafo">
+                    Algunas de las principales utilidades de  <span class="resaltado">
+                        console.log()
+                    </span> son:
+                  </p>
+
+
+                  <ul>
+                    <li>Depuración: console.log() es una forma rápida y sencilla de verificar el valor de variables y comprobar si el flujo de tu código es el esperado. Puedes imprimir el contenido de variables, objetos, arreglos o cualquier otra información relevante para entender cómo se está ejecutando tu código.</li>
+
+                    <li>Mensajes de estado: Puedes usar console.log() para mostrar mensajes de estado o progreso en tu aplicación. Por ejemplo, puedes imprimir mensajes como "Cargando datos...", "Guardando información..." o "Error al cargar la página".</li>
+                    <li>Seguimiento de errores: Cuando ocurren errores en tu código, console.log() te permite mostrar mensajes de error o información específica para entender lo que está sucediendo. Esto puede ser útil para identificar y resolver problemas en tu aplicación.</li>
+                    <li>Verificar el flujo de ejecución: Con console.log(), puedes observar el flujo de ejecución de tu código y asegurarte de que se esté comportando como esperas. Puedes colocar console.log() en diferentes partes de tu código para ver qué sucede en cada etapa.</li>
+                    <li>Inspección de objetos y arreglos: Al imprimir objetos o arreglos con console.log(), puedes ver su contenido y estructura en la consola, lo que te facilita la inspección y comprensión de la información almacenada en ellos.</li>
+                    <li>Medición de tiempos: console.log() también se puede utilizar para medir el tiempo de ejecución de una función o un bloque de código. Puedes utilizar console.time() y console.timeEnd() para calcular el tiempo transcurrido entre ambos puntos y así optimizar el rendimiento de tu aplicación.</li>
+                    
+                  </ul>
+
+                  <p class="parrafo">
+                    Para utilizar console.log() en JavaScript, sigue estos pasos:
+                  </p>
+
+                  <ul>
+                    <li>Abre tu editor de texto o entorno de desarrollo (como Visual Studio Code) y crea un nuevo archivo con extensión ".js". Por ejemplo, "mi_script.js".</li>
+                    <li>Dentro del archivo, puedes escribir código JavaScript y usar console.log() para imprimir mensajes en la consola del navegador o en la terminal, dependiendo del entorno donde estés ejecutando el código.</li>
+                    <li>
+                        Escribe el siguiente código de ejemplo para usar console.log():
+                    </li>
+                  </ul>
+
+                  <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            
+                        // Esto es un comentario de una línea en JavaScript
+                        let nombre = "Jose";
+                        let edad = 30;
+
+                        console.log("Hola, mi nombre es " + nombre + " y tengo " + edad + " años.");
+                          </code>
+                      </pre>
+                  </div>
+
+                  <h2 class="title-h2">¿Qué es una Variable?</h2>
 
                     <p class="parrafo">
                         En programación, una variable es un espacio de memoria reservado para almacenar datos. Estos datos pueden ser valores numéricos, cadenas de texto, objetos, arreglos o cualquier otro tipo de información que el lenguaje de programación pueda manipular.
@@ -46,76 +120,73 @@
                     por ejemplo
                   </p>
 
+
                   
-            <div class="code-only">
-                <pre class="pre-code">
-                  <code  class="language-javascript line-numbers" data-previewers="color time">
-  
-                    let edad; // Declaración de una variable llamada "edad"
-
-                  </code>
-                </pre>
-              </div>
-
-              <p class="parrafo">
-                También puedes declarar varias variables en una sola línea utilizando una coma para separarlas.
-              </p>
-              <div class="code-only">
-                <pre class="pre-code">
-                    <code  class="language-javascript line-numbers" data-previewers="color time">
-                        
-                        let edad, peso; // Declaración de dos variables usando "," para separarlas.
-                        
-                        
-                      </code>
-                  </pre>
-              </div>
-
-              <p class="parrafo">
-                Una vez que has declarado una variable, puedes asignarle un valor utilizando el operador de asignación "=":
-              </p>
-              
-              <div class="code-only">
-                  <pre class="pre-code">
-                      <code  class="language-javascript line-numbers" data-previewers="color time">
-                          
-                          let edad = 30; // Asignación del valor 30 a la variable "edad" en JavaScript
-                          
-                          
-                        </code>
-                    </pre>
-                </div>
-
-                <p class="parrafo">
-                    También puedes declarar una variable e inicializarla con una valor;
-                </p>
-
-
-                <div class="code-only">
-                    <pre class="pre-code">
+                    <div class="code-only">
+                        <pre class="pre-code">
                         <code  class="language-javascript line-numbers" data-previewers="color time">
-                            let edad = 35; // Creación variable y asignacion en una misma linea
+        
+                            let edad; // Declaración de una variable llamada "edad"
+
                         </code>
-                    </pre>
-                </div>
+                        </pre>
+                    </div>
+
+                    <p class="parrafo">
+                    También puedes declarar varias variables en una sola línea utilizando una coma para separarlas.
+                    </p>
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                let edad, peso; // Declaración de dos variables usando "," para separarlas.
+                                
+                            </code>
+                        </pre>
+                    </div>
+
+                    <p class="parrafo">
+                        Una vez que has declarado una variable, puedes asignarle un valor utilizando el operador de asignación "=":
+                    </p>
+                    
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                let edad = 30; // Asignación del valor 30 a la variable "edad" en JavaScript
+                                
+                                </code>
+                            </pre>
+                        </div>
+
+                    <p class="parrafo">
+                        También puedes declarar una variable e inicializarla con una valor;
+                    </p>
+
+
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                let edad = 35; // Creación variable y asignacion en una misma linea
+                            </code>
+                        </pre>
+                    </div>
                 
                 
-                <p class="parrafo">
-                    A lo largo del programa, puedes modificar el valor de una variable asignándole un nuevo valor:
-                </p>
+                    <p class="parrafo">
+                        A lo largo del programa, puedes modificar el valor de una variable asignándole un nuevo valor:
+                    </p>
                 
-                <div class="code-only">
-                    <pre class="pre-code">
-                        <code  class="language-javascript line-numbers" data-previewers="color time">
-                            edad = 35; // Modificación del valor de la variable "edad" en JavaScript
-                        </code>
-                    </pre>
-                </div>
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                edad = 35; // Modificación del valor de la variable "edad" en JavaScript
+                            </code>
+                        </pre>
+                    </div>
+                    
                 
-                
-                <p class="parrafo">
-                    Las variables son fundamentales para realizar cálculos, almacenar información y tomar decisiones basadas en el contenido que contienen. Es uno de los conceptos más básicos pero cruciales en la programación, y comprender cómo utilizar y manejar variables es esencial para escribir código efectivo y funcional.
-                </p>
+                    <p class="parrafo">
+                        Las variables son fundamentales para realizar cálculos, almacenar información y tomar decisiones basadas en el contenido que contienen. Es uno de los conceptos más básicos pero cruciales en la programación, y comprender cómo utilizar y manejar variables es esencial para escribir código efectivo y funcional.
+                    </p>
 
 
                 </article>
@@ -129,332 +200,433 @@
                         En JavaScript, existen varios tipos de operadores que te permiten realizar diferentes tipos de operaciones en tus programas. A continuación, se presentan los tipos de operadores más comunes en JavaScript:
                     </p>
 
-          <!-- ------ -->
+                    <!-- ------ -->
 
-          <h2 class="title-h2">Operadores Aritméticos</h2>
+                    <h2 class="title-h2">Operadores Aritméticos</h2>
 
-          <p class="parrafo">Operadores aritméticos: Se utilizan para realizar operaciones matemáticas en números.</p>
-            <table>
-                <caption>Operadores Aritméticos</caption>
-            <thead>
-                <tr>
-                    <th>Operador</th>
-                    <th>Descripción</th>
-                    <th>Ejemplo</th>
-                </tr>
-            </thead>
-                <tbody>
-                    <tr>
-                    <td>+</td>
-                    <td>Suma</td>
-                    <td>2 + 3 = 5</td>
-                    </tr>
-                    <tr>
-                    <td>-</td>
-                    <td>Resta</td>
-                    <td>5 - 2 = 3</td>
-                    </tr>
-                    <tr>
-                    <td>*</td>
-                    <td>Multiplicación</td>
-                    <td>2 * 3 = 6</td>
-                    </tr>
-                    <tr>
-                    <td>/</td>
-                    <td>División</td>
-                    <td>6 / 2 = 3</td>
-                    </tr>
-                    <tr>
-                    <td>%</td>
-                    <td>Módulo</td>
-                    <td>7 % 3 = 1</td>
-                    </tr>
-                    <tr>
-                    <td>**</td>
-                    <td>Potencia</td>
-                    <td>2 ** 3 = 8</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="parrafo">
-                Ejemplos
-            </p>
+                    <p class="parrafo">Operadores aritméticos: Se utilizan para realizar operaciones matemáticas en números.</p>
+                    <table>
+                        <caption>Operadores Aritméticos</caption>
+                    <thead>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                            <td>+</td>
+                            <td>Suma</td>
+                            <td>2 + 3 = 5</td>
+                            </tr>
+                            <tr>
+                            <td>-</td>
+                            <td>Resta</td>
+                            <td>5 - 2 = 3</td>
+                            </tr>
+                            <tr>
+                            <td>*</td>
+                            <td>Multiplicación</td>
+                            <td>2 * 3 = 6</td>
+                            </tr>
+                            <tr>
+                            <td>/</td>
+                            <td>División</td>
+                            <td>6 / 2 = 3</td>
+                            </tr>
+                            <tr>
+                            <td>%</td>
+                            <td>Módulo</td>
+                            <td>7 % 3 = 1</td>
+                            </tr>
+                            <tr>
+                            <td>**</td>
+                            <td>Potencia</td>
+                            <td>2 ** 3 = 8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="parrafo">
+                        Ejemplos
+                    </p>
 
-            <div class="code-only">
-                <pre class="pre-code">
-                    <code  class="language-javascript line-numbers" data-previewers="color time">
-                        //suma
-                        console.log(2+3) //5
-                        //resta
-                        console.log(5-2) //3
-                        //Multiplicación
-                        console.log(2*3) //6
-                        //División
-                        console.log(6/2) //3
-                        //Módulo
-                        /*Modulo: Muestra el residuo de una división
-                        En este caso 7 dividido entre 3 es igual a 2 y el
-                        residuo es 1*/
-                        console.log(7/3) //1
-                        //Potencia
-                        console.log(2 ** 3) //8
-                       
-                    
-                      </code>
-                  </pre>
-              </div>
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                //suma
+                                console.log(2+3) //5
+                                //resta
+                                console.log(5-2) //3
+                                //Multiplicación
+                                console.log(2*3) //6
+                                //División
+                                console.log(6/2) //3
+                                //Módulo
+                                /*Modulo: Muestra el residuo de una división
+                                En este caso 7 dividido entre 3 es igual a 2 y el
+                                residuo es 1*/
+                                console.log(7/3) //1
+                                //Potencia
+                                console.log(2 ** 3) //8
+                            
+                            
+                            </code>
+                        </pre>
+                    </div>
 
-            <h2 class="title-h2">Operadores de Asignación</h2>
-            <table>
-                <caption>Operadores de Asignación</caption>
-                <tr>
-                <th>Operador</th>
-                <th>Descripción</th>
-                <th>Ejemplo</th>
-                </tr>
-                <tr>
-                <td>=</td>
-                <td>Asignación simple</td>
-                <td>var x = 5;</td>
-                </tr>
-                <tr>
-                <td>+=</td>
-                <td>Asignación con suma</td>
-                <td>x += 3; // x = x + 3;</td>
-                </tr>
-                <tr>
-                <td>-=</td>
-                <td>Asignación con resta</td>
-                <td>x -= 2; // x = x - 2;</td>
-                </tr>
-                <tr>
-                <td>*</td>
-                <td>Asignación con multiplicación</td>
-                <td>x *= 4; // x = x * 4;</td>
-                </tr>
-                <tr>
-                <td>/=</td>
-                <td>Asignación con división</td>
-                <td>x /= 2; // x = x / 2;</td>
-                </tr>
-                <tr>
-                <td>%=</td>
-                <td>Asignación con módulo</td>
-                <td>x %= 3; // x = x % 3;</td>
-                </tr>
-            </table>
+                    <h2 class="title-h2">Operadores de Asignación</h2>
+                    <table>
+                        <caption>Operadores de Asignación</caption>
+                        <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                        <td>=</td>
+                        <td>Asignación simple</td>
+                        <td>let x = 5;</td>
+                        </tr>
+                        <tr>
+                        <td>+=</td>
+                        <td>Asignación con suma</td>
+                        <td>x += 3; // x = x + 3;</td>
+                        </tr>
+                        <tr>
+                        <td>-=</td>
+                        <td>Asignación con resta</td>
+                        <td>x -= 2; // x = x - 2;</td>
+                        </tr>
+                        <tr>
+                        <td>*=</td>
+                        <td>Asignación con multiplicación</td>
+                        <td>x *= 4; // x = x * 4;</td>
+                        </tr>
+                        <tr>
+                        <td>/=</td>
+                        <td>Asignación con división</td>
+                        <td>x /= 2; // x = x / 2;</td>
+                        </tr>
+                        <tr>
+                        <td>%=</td>
+                        <td>Asignación con módulo</td>
+                        <td>x %= 3; // x = x % 3;</td>
+                        </tr>
+                    </table>
 
-            <h2 class="title-h2">Operadores de Comparación</h2>
+                    <p class="parrafo">
+                        Ejemplos
+                    </p>
 
-            <p class="parrafo">
-                Operadores de comparación: Se utilizan para comparar valores y devuelven un valor booleano (true o false).
-            </p>
-            <table>
-                <caption>Operadores de Comparación</caption>
-                <tr>
-                    <th>Operador</th>
-                    <th>Descripción</th>
-                    <th>Ejemplo</th>
-                </tr>
-                <tr>
-                    <td>==</td>
-                    <td>Igual a (valor)</td>
-                    <td>3 == 3 // true</td>
-                </tr>
-                <tr>
-                <td>!=</td>
-                <td>Diferente de (valor)</td>
-                <td>3 != 4 // true</td>
-                </tr>
-                <tr>
-                <td>===</td>
-                <td>Igual a (valor y tipo)</td>
-                <td>3 === '3' // false</td>
-                </tr>
-                <tr>
-                <td>!==</td>
-                <td>Diferente de (valor y tipo)</td>
-                <td>3 !== '3' // true</td>
-                </tr>
-                <tr>
-                <td>&lt;</td>
-                <td>Menor que</td>
-                <td>4 &lt; 5 // true</td>
-                </tr>
-                <tr>
-                <td>&gt;</td>
-                <td>Mayor que</td>
-                <td>5 &gt; 3 // true</td>
-                </tr>
-                <tr>
-                <td>&lt;=</td>
-                <td>Menor o igual que</td>
-                <td>3 &lt;= 3 // true</td>
-                </tr>
-                <tr>
-                <td>&gt;=</td>
-                <td>Mayor o igual que</td>
-                <td>5 &gt;= 4 // true</td>
-                </tr>
-            </table>
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                //Asignación simple
+                                let x = 5;
+                                console.log(x) //5
 
-            <h2 class="title-h2">Operadores Lógicos</h2>
+                                //Asignación con suma
+                                let x = 5;
+                                x += 3;
+                                //x=x+3
+                                console.log(x) //8
 
-            <p class="parrafo">
-                Operadores lógicos: Se utilizan para combinar o invertir valores booleanos.
-            </p>
-            <table>
-                <caption>Operadores Lógicos</caption>
-                <tr>
-                <th>Operador</th>
-                <th>Descripción</th>
-                <th>Ejemplo</th>
-                </tr>
-                <tr>
-                <td>&&</td>
-                <td>AND lógico</td>
-                <td>true && false // false</td>
-                </tr>
-                <tr>
-                <td>||</td>
-                <td>OR lógico</td>
-                <td>true || false // true</td>
-                </tr>
-                <tr>
-                <td>!</td>
-                <td>NOT lógico</td>
-                <td>!true // false</td>
-                </tr>
-            </table>
+                                //Asignación con Multiplicación
+                                let x = 5;
+                                x *= 3;
+                                //x=x*3
+                                console.log(x) //15
 
-            <h2 class="title-h2">Operadores de Incremento y Decremento</h2>
-            <p class="parrafo">
-                Operadores de incremento y decremento: Se utilizan para aumentar o disminuir el valor de una variable en 1.
-            </p>
-            <table>
-                <caption>Operadores de Incremento y Decremento</caption>
-                <tr>
-                <th>Operador</th>
-                <th>Descripción</th>
-                <th>Ejemplo</th>
-                </tr>
-                <tr>
-                <td>++</td>
-                <td>Incremento</td>
-                <td>x++; // Incrementa el valor de x en 1</td>
-                </tr>
-                <tr>
-                <td>--</td>
-                <td>Decremento</td>
-                <td>x--; // Decrementa el valor de x en 1</td>
-                </tr>
-            </table>
-
-            <h2 class="title-h2">Operadores de Concatenación</h2>
-            <p class="parrafo"> Operadores de concatenación: Se utilizan para unir cadenas de texto (strings).
-                +: Concatenación de cadenas</p>
-            <table>
-                <caption>Operadores de Concatenación</caption>
-                <tr>
-                <th>Operador</th>
-                <th>Descripción</th>
-                <th>Ejemplo</th>
-                </tr>
-                <tr>
-                <td>+</td>
-                <td>Concatenación de cadenas</td>
-                <td>'Hola ' + 'Mundo' // 'Hola Mundo'</td>
-                </tr>
-            </table>
+                                //Asignación con División
+                                let x = 5;
+                                x /= 3;
+                                //x=x/3
+                                console.log(x) //1.666
 
 
+                                //Asignación con módulo
+                                let x = 5;
+                                x %=3
+                                console.log(x) //2
+                            </code>
+                        </pre>
+                    </div>
 
+                    <h2 class="title-h2">Operadores de Comparación</h2>
 
-                <!-- 
+                    <p class="parrafo">
+                    Operadores de comparación: Se utilizan para comparar valores y devuelven un valor booleano (true o false).
+                    </p>
+            
+                    <table>
+                        <caption>Operadores de Comparación</caption>
+                        <tr>
+                            <th>Operador</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                            <td>==</td>
+                            <td>Igual a (valor)</td>
+                            <td>3 == 3 // true</td>
+                        </tr>
+                        <tr>
+                        <td>!=</td>
+                        <td>Diferente de (valor)</td>
+                        <td>3 != 4 // true</td>
+                        </tr>
+                        <tr>
+                        <td>===</td>
+                        <td>Igual a (valor y tipo)</td>
+                        <td>3 === '3' // false</td>
+                        </tr>
+                        <tr>
+                        <td>!==</td>
+                        <td>Diferente de (valor y tipo)</td>
+                        <td>3 !== '3' // true</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;</td>
+                        <td>Menor que</td>
+                        <td>4 &lt; 5 // true</td>
+                        </tr>
+                        <tr>
+                        <td>&gt;</td>
+                        <td>Mayor que</td>
+                        <td>5 &gt; 3 // true</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;=</td>
+                        <td>Menor o igual que</td>
+                        <td>3 &lt;= 3 // true</td>
+                        </tr>
+                        <tr>
+                        <td>&gt;=</td>
+                        <td>Mayor o igual que</td>
+                        <td>5 &gt;= 4 // true</td>
+                        </tr>
+                    </table>
+                    <p class="parrafo">
+                        Ejemplos
+                    </p>
 
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                //Igual a (valor)
+                                console.log(3==3) //true
 
-     
+                                //Diferente de (valor)
+                                console.log(3 != 4) //true
 
-    Operadores de comparación: Se utilizan para comparar valores y devuelven un valor booleano (true o false).
-        ==: Igual a (comparación de valor)
-        !=: Diferente de (comparación de valor)
-        ===: Igual a (comparación de valor y tipo de dato)
-        !==: Diferente de (comparación de valor y tipo de dato)
-        <: Menor que
-        >: Mayor que
-        <=: Menor o igual que
-        >=: Mayor o igual que
+                                //Igual a (valor y tipo)
+                                console.log(3 === '3') //false
 
-    Operadores lógicos: Se utilizan para combinar o invertir valores booleanos.
-        &&: AND lógico (y)
-        ||: OR lógico (o)
-        !: NOT lógico (negación)
+                                //Diferente de (valor y tipo)
+                                console.log(3!=='3') //true
 
-    Operadores de incremento y decremento: Se utilizan para aumentar o disminuir el valor de una variable en 1.
-        ++: Incremento
-        --: Decremento
+                                //Menor que
+                                console.log(4&lt;5) //true
 
-    Operadores de concatenación: Se utilizan para unir cadenas de texto (strings).
-        +: Concatenación de cadenas
+                                //Mayor que
+                                console.log(5&gt;3) //true
 
-Estos son algunos de los operadores más comunes en JavaScript. Puedes utilizarlos en tus programas para realizar diversas operaciones matemáticas, lógicas y de asignación.
-                     -->
+                                // 	Menor o igual que
+                                console.log(3&lt;=3) //true
 
+                                // 	Menor o igual que
+                                console.log(5&gt;=3) //true
+                            </code>
+                        </pre>
+                    </div>
 
+                    <h2 class="title-h2">Operadores Lógicos</h2>
 
+                    <p class="parrafo">
+                        Operadores lógicos: Se utilizan para combinar o invertir valores booleanos.
+                    </p>
+           
+                    <table>
+                        <caption>Operadores Lógicos</caption>
+                        <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                        <td>&&</td>
+                        <td>AND lógico</td>
+                        <td>true && false // false</td>
+                        </tr>
+                        <tr>
+                        <td>||</td>
+                        <td>OR lógico</td>
+                        <td>true || false // true</td>
+                        </tr>
+                        <tr>
+                        <td>!</td>
+                        <td>NOT lógico</td>
+                        <td>!true // false</td>
+                        </tr>
+                    </table>
+                    <p class="parrafo">
+                        Ejemplos
+                    </p>
+
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color time">
+                                //&& 	AND lógico
+                                console.log(true && false) //false
+
+                                // ||  	OR lógico 
+                                console.log(true || false) //true
+
+                                // !   	NOT lógico
+                                console.log(!true) //false
+                            </code>
+                        </pre>
+                    </div>
+
+                    <h2 class="title-h2">Operadores de Incremento y Decremento</h2>
+                    <p class="parrafo">
+                        Operadores de incremento y decremento: Se utilizan para aumentar o disminuir el valor de una variable en 1.
+                    </p>
+                    <table>
+                        <caption>Operadores de Incremento y Decremento</caption>
+                        <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                        <td>++</td>
+                        <td>Incremento</td>
+                        <td>x++; // Incrementa el valor de x en 1</td>
+                        </tr>
+                        <tr>
+                        <td>--</td>
+                        <td>Decremento</td>
+                        <td>x--; // Decrementa el valor de x en 1</td>
+                        </tr>
+                    </table>
+
+                    <p class="parrafo">
+                        Ejemplo
+                    </p>
+
+                    <div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color tim e">
+                                // ++ Incremento 
+                                let x = 3;
+                                x++
+                                console.log(x) // 4 Incrementa el valor de x en 1
+
+                                // -- Decremento
+                                let x = 10;
+                                x--
+                                console.log(x) // 9 Decrementa el valor de x en 1
+
+                            </code>
+                        </pre>
+                    </div>
+
+                    <h2 class="title-h2">Operadores de Concatenación</h2>
+                    <p class="parrafo"> Operadores de concatenación: Se utilizan para unir cadenas de texto (strings).
+                        +: Concatenación de cadenas</p>
+                    <table>
+                        <caption>Operadores de Concatenación</caption>
+                        <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                        </tr>
+                        <tr>
+                        <td>+</td>
+                        <td>Concatenación de cadenas</td>
+                        <td>'Hola ' + 'Mundo' // 'Hola Mundo'</td>
+                        </tr>
+                    </table>
+
+                    <p class="parrafo">
+                        Ejemplos
+                    </p>
+
+                    div class="code-only">
+                        <pre class="pre-code">
+                            <code  class="language-javascript line-numbers" data-previewers="color tim e">
+                                // + Concatenación de cadenas
+                                console.log('Hola ' + 'Mundo') //'Hola mundo'
+                                
+
+                            </code>
+                        </pre>
+                    </div>
 
                 </article>
-
-
-                
-
-
-
-
-
-
-
             </section>
         </main>
 
 
-        <div class="navigation">
-
+        <!-- <div class="navigation">
             <a href="../index.html">
                 <div>
                     <p>Volver al inicio</p>
                 </div>
             </a>
-
         </div>
-
 
         <div class="navigation">
             
-           
             <a href="../pages/visual.html">
             <div>
                 <p>Uso de Visual Studio Code</p>
-
-                </div>
-            </a>
-        </div>
-
-        
-
-   <!--      <div class="navigation">
-            
-           
-            <a href="../pages/varoper.html">
-            <div>
-                <p>Ir a Variablees y tipos de operadores</p>
-
                 </div>
             </a>
         </div> -->
 
-        
     </div>
+    
+        <div class="navigation">
+
+            <div class="container-next">
+                <a href="../pages/visual.html">
+                    <div class="container-img-next">
+                        <img src="../public/flecha_left.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+
+                        <p>
+                            Uso de Visual Studio Code
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="container-next">
+                <a href="../pages/varoper.html">
+                    <div class="container-img-next">
+                        <img src="../public/flecha_svg.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+
+                        <p>
+                            Ir a Variablees y tipos de operadores
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+ 
+   
+
+    <footer>
+        <p>Creado por Solu-Informática</p>
+    </footer>
     <script src="../scripts/prism_js/prism.js"></script>
 </body>
 </html>
