@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="if, else, while, do while, for">
+    <link rel="stylesheet" href="../styles/stylesmain.css">
+    <link rel="stylesheet" href="../styles/prism_css/prism.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Estructuras</title>
+</head>
+<body>
+
+    
+    <header>
+        
+        <div>
+            <nav>
+                <div class="header-links">
+                    <a  href="../index.html">Home</a>
+                </div>
+                <div class="header-links">
+                    <a  href="../index.html">Ejemplos</a>
+                </div>
+                <div class="header-links">
+                    <a  href="../index.html">About</a>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="container-image-header"></div>  
+
+    </header>
+
+    <div class="container-main">
+
+     
+        <main class="main">
+            <article>
+
+                <h1 class="title-h1">Estructura de control</h1>
+
+                <h2 class="title-h2">¿Qué es una estructura de control?</h2>
+
+                <p class="parrafo">En programación, una estructura de control es un conjunto de instrucciones que permiten modificar el flujo de ejecución de un programa. Estas estructuras determinan el orden en que se ejecutan las instrucciones o bloques de código en función de ciertas condiciones o criterios. Las estructuras de control son esenciales para tomar decisiones, realizar repeticiones y controlar el flujo general de un programa.</p>
+                <p class="parrafo">Hay tres tipos básicos de estructuras de control en programación:</p>
+
+                <ol>
+                    <li><span class="resaltado">Estructuras de control secuenciales:</span> Estas son las instrucciones que se ejecutan en orden secuencial, una detrás de la otra, tal como están escritas en el código. No tienen un impacto directo en el flujo de ejecución, ya que simplemente se ejecutan en el orden en que aparecen.</li>
+                    <li><span class="resaltado">Estructuras de control de selección (o decisiones):</span> Estas estructuras permiten tomar decisiones basadas en condiciones. La más común es la estructura "if-else" (si-sino), que permite ejecutar un bloque de código si una condición es verdadera y otro bloque de código si la condición es falsa. También puede haber estructuras más complejas, como "switch" (conmutador), que permite elegir entre múltiples opciones.</li>
+                    <li><span class="resaltado">Estructuras de control de iteración (o bucles):</span> Estas estructuras permiten ejecutar un bloque de código repetidamente mientras se cumple una condición. Hay varios tipos de bucles, como el "for" (para), "while" (mientras) y "do-while" (hacer-mientras), cada uno con sus propias características y casos de uso.</li>
+                </ol>
+                <p class="parrafo">Estas estructuras de control son fundamentales para escribir programas que sean capaces de realizar tareas más complejas y dinámicas. Al combinar las estructuras secuenciales, de selección y de iteración, los programadores pueden crear programas que respondan de manera adecuada a diferentes situaciones y datos de entrada.</p>
+                <p class="parrafo">En resumen, las estructuras de control son herramientas esenciales en la programación que permiten controlar el flujo de ejecución de un programa, tomar decisiones basadas en condiciones y repetir tareas de manera controlada.</p>
+                <p class="parrafo"></p>
+                <p class="parrafo"></p>
+            </article>
+
+            <article>
+
+                <h2 class="title-h2">Estructuras de control secuenciales</h2>
+
+                <p class="parrafo">En este ejemplo, las instrucciones se ejecutan en orden secuencial tal como están escritas. Primero se muestra el mensaje "Paso 1: Inicio del programa", luego "Paso 2: Realizando una tarea" y finalmente "Paso 3: Finalizando el programa". No hay decisiones o repeticiones involucradas en este caso, solo se ejecutan una detrás de la otra.</p>
+                 
+            
+
+                <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            // Ejemplo de estructura de control secuencial
+
+                            // Instrucciones se ejecutan en orden secuencial
+                            console.log("Paso 1: Inicio del programa");
+                            console.log("Paso 2: Realizando una tarea");
+                            console.log("Paso 3: Finalizando el programa");
+                            
+                            // El resultado de la ejecución será:
+                            // Paso 1: Inicio del programa
+                            // Paso 2: Realizando una tarea
+                            // Paso 3: Finalizando el programa   
+                        </code>
+                    </pre>
+                </div>
+
+                <p class="parrafo">Este es un ejemplo simple de estructura de control secuencial, que es la base sobre la cual se construyen estructuras más complejas que involucran decisiones y repeticiones.</p>
+
+
+            </article>
+                <h2 class="title-h2">Estructuras de control de selección (o decisiones):</h2>
+
+                <h3 class="title-h3">Estructura (if)</h3>
+                <p class="parrafo">En este ejemplo, utilizamos una estructura de control de selección "if-else" para tomar una decisión basada en la edad. Si la variable edad es mayor o igual a 18, se ejecuta el bloque de código dentro del primer conjunto de llaves. De lo contrario, se ejecuta el bloque de código dentro del segundo conjunto de llaves.</p>
+                 
+            
+
+                <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            // Ejemplo de estructura de control de selección (if-else)
+
+                            // Variable que representa la edad
+                            var edad = 20;
+                            
+                            // Verificar si la edad es mayor o igual a 18
+                            if (edad >= 18) {
+                                console.log("Eres mayor de edad. Puedes votar.");
+                            } else {
+                                console.log("Eres menor de edad. No puedes votar.");
+                            }
+                            
+                            // El resultado de la ejecución depende del valor de 'edad'
+                            // Si edad es 20, el resultado será:
+                            // Eres mayor de edad. Puedes votar.
+                            
+                            // Si edad es 15, el resultado será:
+                            // Eres menor de edad. No puedes votar.
+                             
+                        </code>
+                    </pre>
+                </div>
+
+                <p class="parrafo">En función del valor de edad, el programa mostrará un mensaje diferente. Si edad es 20, se mostrará "Eres mayor de edad. Puedes votar.". Si edad es 15, se mostrará "Eres menor de edad. No puedes votar.".</p>
+
+                <p class="parrafo">Esta es una forma básica de utilizar una estructura de control de selección para tomar decisiones en un programa. Puedes crear decisiones más complejas utilizando operadores lógicos y combinando múltiples condiciones.</p>
+
+
+            </article>
+            </article>
+                <h2 class="title-h2">Estructuras de control de iteración (o bucles)</h2>
+
+                <h3 class="title-h3">while</h3>
+                <p class="parrafo">En este ejemplo, hemos utilizado un bucle "while". El bucle se repetirá siempre que la condición contador <= 5 sea verdadera. En cada iteración, se muestra un mensaje que indica el número de iteración actual, y luego incrementamos el valor de contador en 1.</p>
+                 
+            
+
+                <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            // Ejemplo de estructura de control de iteración (while)
+
+                            // Variable para contar
+                            var contador = 1;
+
+                            // Bucle while: repetir mientras el contador sea menor o igual a 5
+                            while (contador <= 5) {
+                                console.log("Iteración " + contador);
+                                contador++;
+                            }
+
+                            // El resultado de la ejecución será:
+                            // Iteración 1
+                            // Iteración 2
+                            // Iteración 3
+                            // Iteración 4
+                            // Iteración 5 
+                        </code>
+                    </pre>
+                </div>
+
+                <p class="parrafo">El bucle se ejecuta cinco veces porque comenzamos con contador en 1 y lo incrementamos en cada iteración hasta que llega a 6, momento en el que la condición contador <= 5 se vuelve falsa y el bucle termina.</p>
+                <p class="parrafo">Existen otros tipos de bucles, como el bucle "for" y el bucle "do-while", que tienen diferentes formas de controlar la repetición de código. Los bucles son útiles para realizar tareas repetitivas sin tener que escribir el mismo código una y otra vez.</p>
+
+
+                <h2 class="title-h2">do while</h2>
+
+                <p class="parrafo">En este ejemplo, utilizamos un bucle "do-while". A diferencia del bucle "while", el bucle "do-while" ejecutará el bloque de código al menos una vez antes de verificar la condición. En cada iteración, se muestra un mensaje indicando el número de iteración actual, y luego incrementamos el valor de contador en 1.</p>
+
+                <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            // Ejemplo de estructura de control de iteración (do-while)
+
+                            // Variable para contar
+                            var contador = 1;
+                            
+                            // Bucle do-while: repetir al menos una vez y luego mientras el contador sea menor o igual a 5
+                            do {
+                                console.log("Iteración " + contador);
+                                contador++;
+                            } while (contador <= 5);
+                            
+                            // El resultado de la ejecución será:
+                            // Iteración 1
+                            // Iteración 2
+                            // Iteración 3
+                            // Iteración 4
+                            // Iteración 5
+                             
+                        </code>
+                    </pre>
+                </div>
+
+                <p class="parrafo">El bucle se ejecuta cinco veces, al igual que en el ejemplo anterior, porque comenzamos con contador en 1 y lo incrementamos en cada iteración hasta que llega a 6. Aunque la condición contador <= 5 se vuelve falsa después de la quinta iteración, el bucle "do-while" ejecutará el bloque de código al menos una vez.</p>
+                <p class="parrafo">El bucle "do-while" es útil cuando deseas garantizar que el bloque de código se ejecute al menos una vez, incluso si la condición es falsa desde el principio.</p>
+
+
+                <h2 class="title-h2">for</h2>
+                <p class="parrafo">En este ejemplo, utilizamos un bucle "for". La estructura general de un bucle "for" consta de tres partes: la inicialización (var i = 1 en este caso), la condición de continuación (i <= 5) y la actualización (i++ que incrementa el valor de i en 1 en cada iteración).</p>
+                
+                <div class="code-only">
+                    <pre class="pre-code">
+                        <code  class="language-javascript line-numbers" data-previewers="color time">
+                            // Ejemplo de estructura de control de iteración (for)
+
+                            // Bucle for: repetir mientras una variable de control cumple una condición
+                            for (var i = 1; i <= 5; i++) {
+                                console.log("Iteración " + i);
+                            }
+                            
+                            // El resultado de la ejecución será:
+                            // Iteración 1
+                            // Iteración 2
+                            // Iteración 3
+                            // Iteración 4
+                            // Iteración 5
+                            
+                             
+                        </code>
+                    </pre>
+                </div>
+                <p class="parrafo">En este ejemplo, utilizamos un bucle "for". La estructura general de un bucle "for" consta de tres partes: la inicialización (var i = 1 en este caso), la condición de continuación (i <= 5) y la actualización (i++ que incrementa el valor de i en 1 en cada iteración).</p>
+                <p class="parrafo">En cada iteración, se muestra un mensaje que indica el número de iteración actual, basado en el valor de la variable de control i. El bucle "for" se ejecuta cinco veces porque inicializamos i en 1 y lo incrementamos en cada iteración hasta que llega a 6, momento en el que la condición i <= 5 se vuelve falsa y el bucle termina.</p>
+                <p class="parrafo">El bucle "for" es especialmente útil cuando sabes de antemano cuántas veces deseas que se repita el código, ya que todas las partes del bucle (inicialización, condición y actualización) están claramente definidas en una sola línea.</p>
+
+               
+
+
+            </article>
+
+
+
+            
+        </main>
+
+    </div>
+       
+
+        <div class="navigation">
+
+
+            <div class="container-next">
+                <a href="../pages/varoper.html">
+                    <div>
+                        <img src="../public/flecha_left.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+                        <p>Ir a Variablees y tipos de operadores</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="container-next">
+                <a href="../pages/varoper.html">
+                    <div>
+                        <img src="../public/flecha_svg.svg" alt="" height="80px">
+                    </div>
+                    <div class="text-next">
+                        <p>siguiente pagina</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <p>Creado por Solu-Informática</p>
+        </footer>
+
+
+       
+
+        
+    <script src="../scripts/prism_js/prism.js"></script>
+</body>
+</html>
